@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนูเครื่องดื่ม</title>
+    <link rel="stylesheet" href="stylesmn.css">
+</head>
+
+<body>
+    <div class="container fade-in">
+        <h1>เมนูเครื่องดื่มตามอารมณ์</h1>
+        <h2><a href="index.html" class="button-link">กลับไปหน้าหลัก</a></h2>
+        <!-- เมนูอารมณ์ดี -->
+        <div class="menu-section">
+            <h2>อารมณ์ดี</h2>
+            <h3>เย็น:</h3>
+            <ul>
+                <li onclick="showIngredients('น้ำมะนาวเย็น')">น้ำมะนาวเย็น</li>
+                <li onclick="showIngredients('ช็อกโกแลตเย็น')">ช็อกโกแลตเย็น</li>
+                <li onclick="showIngredients('น้ำผลไม้รวม')">น้ำผลไม้รวม</li>
+                <li onclick="showIngredients('น้ำส้มคั้นสด')">น้ำส้มคั้นสด</li>
+                <li onclick="showIngredients('น้ำแตงโมปั่น')">น้ำแตงโมปั่น</li>
+            </ul>
+            <h3>ร้อน:</h3>
+            <ul>
+                <li onclick="showIngredients('น้ำมะนาวร้อน')">น้ำมะนาวร้อน</li>
+                <li onclick="showIngredients('ช็อกโกแลตร้อน')">ช็อกโกแลตร้อน</li>
+                <li onclick="showIngredients('ชาไทยร้อน')">ชาไทยร้อน</li>
+                <li onclick="showIngredients('น้ำส้มร้อน')">น้ำส้มร้อน</li>
+                <li onclick="showIngredients('น้ำลูกเดือยร้อน')">น้ำลูกเดือยร้อน</li>
+                <li onclick="showIngredients('นมสดร้อน')">นมสดร้อน</li>
+                <li onclick="showIngredients('น้ำผึ้งมะนาวร้อน')">น้ำผึ้งมะนาวร้อน</li>
+                <li onclick="showIngredients('ชาดำร้อน')">ชาดำร้อน</li>
+                <li onclick="showIngredients('ชาเขียวร้อน')">ชาเขียวร้อน</li>
+                <li onclick="showIngredients('น้ำร้อน')">น้ำร้อน</li>
+            </ul>
+        </div>
+
+        <!-- เมนูเครียด -->
+        <div class="menu-section">
+            <h2>เครียด</h2>
+            <h3>เย็น:</h3>
+            <ul>
+                <li onclick="showIngredients('ชานมไข่มุก')">ชานมไข่มุก</li>
+                <li onclick="showIngredients('น้ำแดงโซดา')">น้ำแดงโซดา</li>
+                <li onclick="showIngredients('นมกล้วย')">นมกล้วย</li>
+                <li onclick="showIngredients('น้ำมะพร้าว')">น้ำมะพร้าว</li>
+                <li onclick="showIngredients('น้ำลำไย')">น้ำลำไย</li>
+                <li onclick="showIngredients('น้ำสับปะรดเย็น')">น้ำสับปะรดเย็น</li>
+                <li onclick="showIngredients('น้ำเสาวรสปั่น')">น้ำเสาวรสปั่น</li>
+                <li onclick="showIngredients('มะนาวโซดา')">มะนาวโซดา</li>
+                <li onclick="showIngredients('น้ำองุ่นเย็น')">น้ำองุ่นเย็น</li>
+                <li onclick="showIngredients('น้ำมะม่วงปั่น')">น้ำมะม่วงปั่น</li>
+            </ul>
+            <h3>ร้อน:</h3>
+            <ul>
+                <li onclick="showIngredients('ชาเขียวร้อน')">ชาเขียวร้อน</li>
+                <li onclick="showIngredients('ชาอู่หลงร้อน')">ชาอู่หลงร้อน</li>
+                <li onclick="showIngredients('กาแฟร้อน')">กาแฟร้อน</li>
+                <li onclick="showIngredients('ชาโบลินร้อน')">ชาโบลินร้อน</li>
+                <li onclick="showIngredients('น้ำมะพร้าวร้อน')">น้ำมะพร้าวร้อน</li>
+                <li onclick="showIngredients('น้ำผึ้งร้อน')">น้ำผึ้งร้อน</li>
+                <li onclick="showIngredients('นมข้าวโพดร้อน')">นมข้าวโพดร้อน</li>
+                <li onclick="showIngredients('ชาใบรางจืดร้อน')">ชาใบรางจืดร้อน</li>
+                <li onclick="showIngredients('น้ำมะนาวร้อน')">น้ำมะนาวร้อน</li>
+                <li onclick="showIngredients('น้ำขิงร้อน')">น้ำขิงร้อน</li>
+            </ul>
+        </div>
+
+        <!-- เมนูเหนื่อย -->
+        <div class="menu-section">
+            <h2>เหนื่อย</h2>
+            <h3>เย็น:</h3>
+            <ul>
+                <li onclick="showIngredients('น้ำองุ่น')">น้ำองุ่น</li>
+                <li onclick="showIngredients('กาแฟเย็น')">กาแฟเย็น</li>
+                <li onclick="showIngredients('น้ำมะพร้าวสด')">น้ำมะพร้าวสด</li>
+                <li onclick="showIngredients('น้ำแครอท')">น้ำแครอท</li>
+                <li onclick="showIngredients('นมสด')">นมสด</li>
+                <li onclick="showIngredients('น้ำส้มปั่น')">น้ำส้มปั่น</li>
+                <li onclick="showIngredients('น้ำทับทิมปั่น')">น้ำทับทิมปั่น</li>
+                <li onclick="showIngredients('น้ำแอปเปิ้ลปั่น')">น้ำแอปเปิ้ลปั่น</li>
+                <li onclick="showIngredients('น้ำกีวีปั่น')">น้ำกีวีปั่น</li>
+                <li onclick="showIngredients('น้ำมะพร้าวปั่น')">น้ำมะพร้าวปั่น</li>
+            </ul>
+            <h3>ร้อน:</h3>
+            <ul>
+                <li onclick="showIngredients('น้ำขิงร้อน')">น้ำขิงร้อน</li>
+                <li onclick="showIngredients('กาแฟร้อน')">กาแฟร้อน</li>
+                <li onclick="showIngredients('นมข้าวโพดร้อน')">นมข้าวโพดร้อน</li>
+                <li onclick="showIngredients('น้ำขิงมะนาวร้อน')">น้ำขิงมะนาวร้อน</li>
+                <li onclick="showIngredients('น้ำฟักทองร้อน')">น้ำฟักทองร้อน</li>
+                <li onclick="showIngredients('น้ำมะพร้าวร้อน')">น้ำมะพร้าวร้อน</li>
+                <li onclick="showIngredients('น้ำส้มร้อน')">น้ำส้มร้อน</li>
+                <li onclick="showIngredients('น้ำฟักทองปั่นร้อน')">น้ำฟักทองปั่นร้อน</li>
+                <li onclick="showIngredients('น้ำลูกพรุนร้อน')">น้ำลูกพรุนร้อน</li>
+                <li onclick="showIngredients('นมอุ่น')">นมอุ่น</li>
+            </ul>
+        </div>
+    </div>
+    <script src="scriptmn.js"></script>
+</body>
+
+</html>

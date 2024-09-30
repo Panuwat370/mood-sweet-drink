@@ -1,0 +1,169 @@
+html, body {
+    height: 100%; /* กำหนดความสูงให้เต็มจอ */
+    margin: 0; /* ยกเลิก margin ของ body */
+    padding: 0; /* ยกเลิก padding ของ body */
+}
+
+body {
+    background-color: #FFB2B2; /* กำหนดสีพื้นหลังเดียว */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease; /* Transition for background color */
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: #343a40; /* สีตัวอักษร */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* เงาของตัวอักษร */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 600px; /* ความกว้างสูงสุดของ container */
+    margin: 0 auto; /* จัดกลาง */
+    position: relative; /* ใช้สำหรับ positioning */
+    z-index: 1; /* ให้ element นี้อยู่ด้านบน */
+}
+
+/* Form group styles */
+.form-group {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.form-group:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #6c757d; /* สีพื้นหลังเทา */
+    border-color: #5a6268; /* สีขอบปุ่ม */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* การเปลี่ยนแปลง */
+}
+
+.btn-primary:hover {
+    background-color: #5a6268; /* เปลี่ยนสีพื้นหลังเมื่อชี้ */
+    border-color: #4e555b; /* สีขอบเมื่อชี้ */
+    transform: scale(1.05); /* ขยายเมื่อชี้ */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เงาเมื่อชี้ */
+}
+
+/* Weather display styles */
+#weather_display, 
+#recommended_genre_display {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s;
+}
+
+#weather_display:hover, 
+#recommended_genre_display:hover {
+    background-color: #d3d3d3;
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Song list styles */
+.song-list {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-bottom: 5px;
+    transition: background-color 0.2s, transform 0.2s;
+    border-radius: 4px;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+/* Song detail styles */
+#song-detail {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+label {
+    font-weight: bold;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transition for image scale */
+}
+
+img:hover {
+    transform: scale(1.03); /* Scale effect on hover */
+}
+
+/* Animation for loading elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Button link styles */
+.button-link {
+    display: inline-block; /* Make it an inline block */
+    padding: 10px 20px; /* Button padding */
+    background-color: #FF6F61; /* Button background color */
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Hover and click effects */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.button-link:hover {
+    background-color: #FF4C3B; /* Background color on hover */
+    transform: translateY(-2px); /* Move up on hover */
+}
+
+.button-link:active {
+    background-color: #D8433A; /* Background color when clicked */
+    transform: translateY(0); /* Return to original position */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow when clicked */
+}
